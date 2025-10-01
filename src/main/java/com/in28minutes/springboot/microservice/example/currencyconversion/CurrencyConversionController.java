@@ -21,7 +21,7 @@ public class CurrencyConversionController {
                                                 @PathVariable String to,
                                                 @PathVariable BigDecimal quantity) {
 
-    CurrencyConversionBean response = proxy.retrieveExchangeValue(from, to);
+    ExchangeValue response = proxy.retrieveExchangeValue(from, to);
 
     LOGGER.info("{}", response);
 
